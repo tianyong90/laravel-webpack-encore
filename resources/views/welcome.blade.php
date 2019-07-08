@@ -6,7 +6,7 @@
 
     <title>laravel webpack-encore</title>
 
-{!! encore_entry_link_tags('app') !!}
+{{ encore_entry_link_tags('app') }}
 </head>
 <body>
 <div>
@@ -15,6 +15,6 @@
     </div>
 </div>
 
-{!! encore_entry_script_tags('app') !!}
+{{ encore_entry_script_tags('app') }}
 </body>
 </html>
