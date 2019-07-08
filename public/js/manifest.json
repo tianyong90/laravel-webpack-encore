@@ -1,4 +1,4 @@
 {
-  "js/app.js": "/js/app.js",
-  "js/runtime.js": "/js/runtime.js"
+  "js/app.js": "http://localhost:9000/js/app.js",
+  "js/runtime.js": "http://localhost:9000/js/runtime.js"
 }

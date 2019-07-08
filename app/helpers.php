@@ -12,6 +12,10 @@ function encore_entry_link_tags(string $entryName): string
 
     $jsonResult = json_decode(file_get_contents($entryPointsFile), true);
 
+    if (!array_key_exists('css', $jsonResult['entrypoints'][$entryName])) {
+        return '';
+    }
+
     $tags = array_map(function ($item) {
         return '<link rel="stylesheet" href="'.$item.'"/>';
     }, $jsonResult['entrypoints'][$entryName]['css']);
@@ -28,6 +32,10 @@ function encore_entry_script_tags(string $entryName): string
     $entryPointsFile = public_path('js/entrypoints.json');
 
     $jsonResult = json_decode(file_get_contents($entryPointsFile), true);
+
+    if (!array_key_exists('js', $jsonResult['entrypoints'][$entryName])) {
+        return '';
+    }
 
     $tags = array_map(function ($item) {
         return '<script src="'.$item.'"></script>';
