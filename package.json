@@ -11,7 +11,7 @@
     },
     "devDependencies": {
         "@symfony/webpack-encore": "^0.27.0",
-        "axios": "^0.18",
+        "axios": "^0.21",
         "bootstrap": "^4.1.0",
         "cache-loader": "^4.0.1",
         "cross-env": "^5.2.0",
