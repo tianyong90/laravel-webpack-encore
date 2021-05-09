@@ -16,7 +16,7 @@
         "cache-loader": "^4.0.1",
         "cross-env": "^5.2.0",
         "jquery": "^3.2",
-        "lodash": "^4.17.5",
+        "lodash": "^4.17.21",
         "popper.js": "^1.12",
         "postcss-import": "^12.0.1",
         "postcss-loader": "^3.0.0",
